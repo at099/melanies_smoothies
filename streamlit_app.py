@@ -42,4 +42,4 @@ st.success("Your Smoothie is ordered! :name_on_order", icon="✅")
 #New section to display fruitvice nutrition information
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response)
+st.text(fruityvice_response.json())
